@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const {secretKey} = require("../configuration/jwtConfig");
+const {secretKey} = require("../configuration/jwtConfig");/*1234*/
 function generateToken(user){
     const payload = {
         id: user._id,
