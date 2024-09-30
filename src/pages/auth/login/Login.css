@@ -1,0 +1,82 @@
+/* Container for the login box */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: white;
+}
+
+/* Login box styling */
+.login-box {
+  border: 1px solid #ccc;
+  padding: 30px;
+  background-color: #f0f2f5;
+  width: 400px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Header for login */
+.login-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form group to wrap label and input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Styling for labels */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Styling for input fields */
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 0%;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Message styling */
+.login-message {
+  text-align: center;
+  margin-top: 15px;
+  color: green;
+}
+@media (max-width: 768px) {
+  .login-box{
+    max-width: 300px;
+    max-height: 400px;
+  }
+}

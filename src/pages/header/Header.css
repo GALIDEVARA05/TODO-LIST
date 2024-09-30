@@ -1,0 +1,113 @@
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+/* Container inside the Navbar */
+.navbar-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Extra padding for better alignment */
+}
+
+/* Navbar title */
+.navbar-title {
+    font-size: 1.8rem; /* Adjusted font size */
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+.navbar-title,.link{
+    color: red;
+    text-decoration: none;
+}
+.navbar-title,.link:hover{
+    color:#00aaff ;
+}
+/* Navbar Menu (Login/Signup) */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Adds space between the links */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Menu Items */
+.navbar-menu li {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Links */
+.navbar-menu a {
+    color: red;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px; /* Padding around the links */
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-menu a:hover {
+    color: #00aaff;
+}
+.navbar-title:hover{
+  color: #00aaff;
+}
+.sec1{
+    text-align: center;
+    margin-top:15%;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar-title {
+        font-size: 1.6rem; /* Adjust font size on tablet devices */
+    }
+
+    .navbar-menu a {
+        font-size: 1rem; /* Adjust link size on tablet devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: row;
+        text-align: center; /* Stack items vertically */
+    }
+
+    .navbar-title {
+        margin-bottom: 10px;
+    }
+
+    .navbar-menu {
+        flex-direction: row; /* Stack links vertically on smaller screens */
+    }
+
+    .navbar-menu li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 10px;
+    }
+
+    .navbar-title {
+        font-size: 1.4rem; /* Smaller font size for mobile */
+    }
+
+    .navbar-menu a {
+        font-size: 0.9rem;
+    }
+}
