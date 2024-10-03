@@ -2,6 +2,10 @@
 const express = require("express");
 const signupRoute = require("./routes/signup");
 const loginRoute = require("./routes/login");
+<<<<<<< HEAD
+=======
+const todoRoutes = require("./routes/todo");
+>>>>>>> d116f7b (intial-commit)
 const bodyParser = require("body-parser");
 const cors = require('cors');
 const mongoose = require("./configuration/dbconfig");  // MongoDB connection
@@ -27,6 +31,10 @@ createAdminAccount();
 // Use routes
 app.use("/user", signupRoute);
 app.use("/auth", loginRoute);
+<<<<<<< HEAD
+=======
+app.use("/api", todoRoutes); // API routes prefixed with /api
+>>>>>>> d116f7b (intial-commit)
 
 // Health check route
 app.get("/", (req, res) => {
